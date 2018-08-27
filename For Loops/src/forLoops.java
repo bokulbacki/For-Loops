@@ -12,9 +12,9 @@ public class forLoops
 //				showGeniusThree();
 //				showGeniusFour();
 //				showGeniusFive();
-				showGeniusSix();
+//				showGeniusSix();
 //				showGeniusSeven();
-//				showGeniusEight();
+				showGeniusEight();
 			}
 		
 		public static void showGeniusOne()
@@ -72,6 +72,40 @@ public class forLoops
 				{
 				 counter = counter + lowNum;
 				}
+			System.out.println("sum = " +counter);
 		}
+		
+		public static void showGeniusSeven()
+		{
+			System.out.println("Choose a low number.");
+			lowNum = userInput.nextInt();
+			System.out.println("Choose a high number.");
+			highNum = userInput.nextInt();
+			int counter = 0;
+			for (;lowNum<=highNum; lowNum++)
+				{
+				if (lowNum%3==0)
+					{
+						counter = counter + lowNum;
+					}
+				else
+					{
+						
+					}
+				}
+			System.out.println("sum = " +counter);
+		}
+		
+		public static void showGeniusEight()
+		{
+			System.out.println("*********");
+			for (int i = 0; i<9; i++)
+				{
+					System.err.println("*        *");
+				}
+			System.out.println("*********");
+		}
+		
+		
 		
 	}
