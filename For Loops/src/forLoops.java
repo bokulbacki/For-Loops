@@ -1,15 +1,18 @@
+import java.util.Scanner;
 
 public class forLoops
 	{
-
+		static Scanner userInput = new Scanner(System.in);
+		static int lowNum=0;
+		static int highNum=0;
 		public static void main(String[] args)
 			{
-				showGeniusOne();
-				showGeniusTwo();
-				showGeniusThree();
-				showGeniusFour();
-				showGeniusFive();
-//				showGeniusSix();
+//				showGeniusOne();
+//				showGeniusTwo();
+//				showGeniusThree();
+//				showGeniusFour();
+//				showGeniusFive();
+				showGeniusSix();
 //				showGeniusSeven();
 //				showGeniusEight();
 			}
@@ -50,10 +53,24 @@ public class forLoops
 		
 		public static void showGeniusFive()
 		{
+			int total=0; 
 			for (int i = 5; i<=100; i=i+5)
 				{
-					int total; 
 					total = total + i;
+				}
+			System.out.println(total);
+		}
+		
+		public static void showGeniusSix()
+		{
+			System.out.println("Choose a low number.");
+			lowNum = userInput.nextInt();
+			System.out.println("Choose a high number.");
+			highNum = userInput.nextInt();
+			int counter = 0;
+			for (;lowNum<=highNum; lowNum++)
+				{
+				 counter = counter + lowNum;
 				}
 		}
 		
