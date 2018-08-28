@@ -7,6 +7,8 @@ public class forLoops
 		static int highNum=0;
 		public static void main(String[] args)
 			{
+			System.out.println("Comment for homework credit.");
+			// comment for homework credit 
 				showGeniusOne();
 				showGeniusTwo();
 				showGeniusThree();
